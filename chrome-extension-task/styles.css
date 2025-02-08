@@ -1,0 +1,197 @@
+/* General Styling */
+body {
+    width: 350px;
+    height: 400px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #c4d4ae; /* Background color */
+    margin: 70px auto; /* Margin for spacing around the body */
+    padding: 20px; /* Padding inside the body */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main Container */
+.container {
+    background: white;
+    padding: 30px; /* Increased padding for more space inside the container */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto; /* Ensure the container is centered with no margin on top/bottom */
+}
+
+/* App Icon */
+.app-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* Heading */
+h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Inputs */
+label {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+input {
+    width: 90%;
+    padding: 10px; /* More padding inside the input fields */
+    margin-top: 8px; /* Margin between the label and input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login-btn {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+#login-btn:hover {
+    background: #0056b3;
+}
+
+/* Google Login Button */
+#google-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #4285F4;
+    color: white;
+    padding: 12px; /* Extra padding for the button */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+#google-login:hover {
+    background: #357ae8;
+}
+.google-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* User Info (After Login) */
+.hidden {
+    display: none;
+}
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+#view-history {
+    width: 100%;
+    background: #28a745;
+    color: white;
+    padding: 12px; /* Extra padding for the "View Chat" button */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+#view-history:hover {
+    background: #218838;
+}
+
+/* Centered text with spacing */
+p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* Stylish link */
+p a {
+    color: #4285F4; /* Google Blue */
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+p a:hover {
+    text-decoration: underline;
+    color: #357ae8;
+}
+
+/* Register Button Styling */
+#register-btn {
+    width: 100%;
+    background: #FF9800; /* Orange for contrast */
+    color: white;
+    padding: 12px; /* Extra padding for comfort */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+#register-btn:hover {
+    background: #E68900; /* Darker shade on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+#register-btn:active {
+    background: #D17D00; /* Even darker when clicked */
+}
+
+/* Back Button Styling */
+#back-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Hover Effects */
+#back-btn:hover {
+    background-color: #ddd;
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Focused State */
+#back-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Blue glow effect when focused */
+}
+
+/* Disabled State */
+#back-btn:disabled {
+    background-color: #e0e0e0;
+    color: #b0b0b0;
+    cursor: not-allowed;
+}

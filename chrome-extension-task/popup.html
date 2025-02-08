@@ -1,0 +1,41 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Meet Chat Saver</title>
+        <link rel="stylesheet" href="styles.css"> <!-- Link the CSS file -->
+        <script defer src="popup.js"></script> <!-- Load JavaScript -->
+    </head>
+    <body>
+        <div class="container">
+            <!-- Login Section -->
+            <div id="login-section">
+                <img src="./icons/icon128.png" alt="App Icon" class="app-icon">
+                <h2>Google Meet Chat Saver</h2>
+                <p>Save and view chat messages from Google Meet easily.</p>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password" />
+                <button id="login-btn">Login</button>
+                <button id="google-login">
+                    <img src="./icons/google-icon.png" alt="Google Icon" class="google-icon">
+                    Sign in with Google
+                </button>
+                <p>Don't have an account? <a href="register.html">Register here</a></p>
+            </div>
+
+            <!-- After Login Section -->
+            <div id="user-info" class="hidden">
+                <h2 id="user-name"></h2>
+                <button id="view-history">View Chat</button>
+                <div id="chat-history" class="hidden">
+                    <!-- Chat history display will appear here -->
+                    <h3>Chat History</h3>
+                    <div id="chat-list"></div>
+                </div> 
+            </div>
+        </div>
+    </body>
+    </html>
